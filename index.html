@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+
+    <title>Savron RentaL</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Chcesz wynajacz ten samochod?</h3>
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">    
+                  <ul>
+           <li>Zadzwon na numer: +48 (792) 181 773 - David    </li>
+           </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overlay"></div>
+        <header class="header">
+            <a href="" class="burger "><span></span></a>
+            <div class="header__top">
+                <div class="container__main">
+                    <div class="header__top-inner">
+                        <div class="header__logo logo">
+                            <img src="./img/icons/logo_Savron.png" alt="">
+                        </div>
+                        <div class="header__nav-burger">
+                            <!-- <div class="header__city-change">
+                                <div class="city__change-moskow">
+                                    <a href="#">
+                                        <svg width="9.000000" height="11.000000" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    	
+                                            <defs>
+                                                <linearGradient id="paint_linear_7806_419_0" x1="-0.000000" y1="7.562499" x2="8.999998" y2="2.979166" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#9F7437"/>
+                                                    <stop offset="1.000000" stop-color="#E3D293"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="Vector" d="M4.5 0C3.30713 0.00146484 2.16309 0.465332 1.31934 1.29004C0.476074 2.11523 0.00146484 3.2334 0 4.3999C0 6.19043 1.3291 7.67725 2.7373 9.25049C3.18262 9.74902 3.64404 10.2642 4.05469 10.7856C4.10693 10.8525 4.17432 10.9062 4.25195 10.9434C4.3291 10.9805 4.41406 11 4.5 11C4.58594 11 4.6709 10.9805 4.74805 10.9434C4.82568 10.9062 4.89307 10.8525 4.94531 10.7856C5.35596 10.2642 5.81738 9.74902 6.2627 9.25049C7.6709 7.67725 9 6.19043 9 4.3999C8.99854 3.2334 8.52393 2.11523 7.68066 1.29004C6.83691 0.465332 5.69287 0.00146484 4.5 0ZM4.5 6.05029C4.16602 6.05029 3.83984 5.95361 3.5625 5.77197C3.28516 5.59082 3.06885 5.33301 2.94092 5.03174C2.81299 4.72998 2.77979 4.39844 2.84473 4.07812C2.91016 3.7583 3.0708 3.46436 3.30664 3.2334C3.54297 3.00244 3.84326 2.84521 4.1709 2.78174C4.49805 2.71826 4.8374 2.75098 5.146 2.87549C5.4541 3.00049 5.71777 3.21191 5.90332 3.4834C6.08838 3.75488 6.1875 4.07373 6.1875 4.3999C6.1875 4.83789 6.00977 5.25732 5.69336 5.56689C5.37695 5.87646 4.94775 6.05029 4.5 6.05029Z" fill="url(#paint_linear_7806_419_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                        </svg>
+                                        Москва</a></div>
+                                        
+                                <div class="city__change-dubai"><a href="#">
+                                    <svg width="9.000000" height="11.000000" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    	
+                                        <defs>
+                                            <linearGradient id="paint_linear_7806_419_0" x1="-0.000000" y1="7.562499" x2="8.999998" y2="2.979166" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#9F7437"/>
+                                                <stop offset="1.000000" stop-color="#E3D293"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <path id="Vector" d="M4.5 0C3.30713 0.00146484 2.16309 0.465332 1.31934 1.29004C0.476074 2.11523 0.00146484 3.2334 0 4.3999C0 6.19043 1.3291 7.67725 2.7373 9.25049C3.18262 9.74902 3.64404 10.2642 4.05469 10.7856C4.10693 10.8525 4.17432 10.9062 4.25195 10.9434C4.3291 10.9805 4.41406 11 4.5 11C4.58594 11 4.6709 10.9805 4.74805 10.9434C4.82568 10.9062 4.89307 10.8525 4.94531 10.7856C5.35596 10.2642 5.81738 9.74902 6.2627 9.25049C7.6709 7.67725 9 6.19043 9 4.3999C8.99854 3.2334 8.52393 2.11523 7.68066 1.29004C6.83691 0.465332 5.69287 0.00146484 4.5 0ZM4.5 6.05029C4.16602 6.05029 3.83984 5.95361 3.5625 5.77197C3.28516 5.59082 3.06885 5.33301 2.94092 5.03174C2.81299 4.72998 2.77979 4.39844 2.84473 4.07812C2.91016 3.7583 3.0708 3.46436 3.30664 3.2334C3.54297 3.00244 3.84326 2.84521 4.1709 2.78174C4.49805 2.71826 4.8374 2.75098 5.146 2.87549C5.4541 3.00049 5.71777 3.21191 5.90332 3.4834C6.08838 3.75488 6.1875 4.07373 6.1875 4.3999C6.1875 4.83789 6.00977 5.25732 5.69336 5.56689C5.37695 5.87646 4.94775 6.05029 4.5 6.05029Z" fill="url(#paint_linear_7806_419_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    Дубай</a></div>
+                            </div> -->
+                            <nav class="header__nav">
+                                <ul class="header__nav-list">
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#" >Znaleśc auto</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#" >Wymagania</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#" >Ceny</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#" >O nas</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#" >Kontact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__socials-nav">
+                                <div class="header__socials-item">
+                                    <div class="header__socials_link">
+                                        <a href="#"><img src="./img/icons/Vector.svg" alt=""></a>
+                                    </div>
+                                    <div class="header__socials_link">
+                                        <a href="#"><img src="./img/icons/Vector-telegram.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__phone-numbers">+48 (792) 181 773</div>
+                            <div class="header__nav-button"><button><a href="#">Zarezerwuj połączenie</a></button></div>
+                        </div>
+                        <!-- <div class="header__button-profile">
+                            <div class="header__profile-item"><button><img src="./img/icons/header__cars.svg" alt=""></button></div>
+                            <div class="header__profile-item"><button><img src="./img/icons/header-persone.svg" alt=""></button></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header__content">
+                <div class="container__main">
+                    <div class="header__content-inner">
+                        <div class="container">
+                            <div class="header__title">Wynajem busa w Legnicy</div>
+                            <div class="header__subtitle">Wynajem auta z kierowca i bez</div>
+                            <div class="header__span"><span></span></div>
+                            <div class="header__content-row">
+                                <div class="header__row-item">
+                                    <div class="header__row-number"><p>1</p></div>
+                                    <div class="header__row-text">Duży park
+                                        samochód <br>
+                                        </div>
+                                </div>
+                                <div class="header__row-item">
+                                    <div class="header__row-number"><p>2</p></div>
+                                    <div class="header__row-text">Dostawa samochodu <br>
+                                        do Twojej geolokalizacji</div>
+                                </div>
+                                <div class="header__row-item">
+                                    <div class="header__row-number"><p>3</p></div>
+                                    <div class="header__row-text">Zniżki dla stałych
+                                        <br>
+                                        klienci</div>
+                                </div>
+                                <div class="header__row-item">
+                                    <div class="header__row-number"><p>4</p></div>
+                                    <div class="header__row-text">Dowolny kształt <br>
+                                        oplaty</div>
+                                </div>
+                                <div class="header__row-item">
+                                    <div class="header__row-number"><p>5</p></div>
+                                    <div class="header__row-text">Korzystne ceny</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="header_arend">
+                <div class="container">
+                    <div class="header__arend-inner">
+                        <div class="header__arend-content">
+                            <div class="arend__title">Заказать аренду online</div>
+                            <div class="arend__search">
+                                <div class="arend_input-item">
+                                    <input class="arend_input" type="text" placeholder="Начало аренды">
+                                    <input class="arend_input" type="text" placeholder="Завершение аренды">
+                                </div>
+                                <ul class="arend__checkbox-list">
+                                    <li class="arend__checkbox-item">
+                                        <a href="#">
+                                            <div class="arend__checkbox">
+                                                <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs/>
+                                                    <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <div class="arend__checkbox-text">Внедорожник</div>
+                                    </li>
+                                    <li class="arend__checkbox-item">
+                                        <a href="#">
+                                            <div class="arend__checkbox">
+                                                <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs/>
+                                                    <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <div class="arend__checkbox-text">Спорт</div>
+                                    </li>
+                                    <li class="arend__checkbox-item">
+                                        <a href="#">
+                                            <div class="arend__checkbox">
+                                                <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs/>
+                                                    <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <div class="arend__checkbox-text">Бизнес</div>
+                                    </li>
+                                    <li class="arend__checkbox-item">
+                                        <a href="#">
+                                            <div class="arend__checkbox">
+                                                <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs/>
+                                                    <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <div class="arend__checkbox-text">Спорткар</div>
+                                    </li>
+                                    <li class="arend__checkbox-item">
+                                        <a href="#">
+                                            <div class="arend__checkbox">
+                                                <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs/>
+                                                    <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <div class="arend__checkbox-text">Премиум</div>
+                                    </li>
+                                    <li class="arend__checkbox-item">
+                                        <a href="#">
+                                            <div class="arend__checkbox">
+                                                <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs/>
+                                                    <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <div class="arend__checkbox-text">Комфорт</div>
+                                    </li>
+                                </ul>
+                                <div class="arend__button"><button>Найти варианты</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </header>
+        <main class="main">
+            <div class="main__car-park">
+                <div class="container">
+                    <div class="car__park-inner">
+                        <div class="car__park-content">
+                            <div class="car__park-top">
+                                <div class="car__park-heading">
+                                    <div class="heading__title">Nasza flota samochodowa</div>
+                                    <button class="heading__button" type="button" data-filter="all">Zobaczyc wszystkie</button>
+                                </div>
+                                <div class="car__btn-box">
+                                    <div class="car__btn-item" ><button type="button" data-filter=".car-fiat" ><img src="./img/icons/fiat-logo.png" alt="">Fiat</button></div>
+                                    <!-- <div class="car__btn-item" ><button type="button" data-filter=".car-renault" ><img src="./img/icons/renault-logo.png" alt=""><span>Renault</span></button></div> -->
+                                    <div class="car__btn-item" ><button type="button" data-filter=".car-mersedes" ><img src="./img/icons/Mercedes-Logo.svg.png" alt="">Mersedes</button></div>
+                                </div>
+                            </div>
+                            <div class="car__park-cards">
+                                <div class="mix car__park-card car-fiat">
+                                    <div class="car__img-box">
+                                        <div class="car__img-city">Legnica</div>
+                                        <div class="car__park-img"><img src="./img/cars-img/fiat-tolrnto.png" alt=""></div>
+                                        
+                                    </div>
+                                    <div class="car__card-text">
+                                        <div class="card__car-name">Fiat Tolento, 2018</div>
+                                        <div class="cars__car-traits">
+                                            <div class="car__traits-engine"><img src="./img/icons/engine.svg" alt="">2,3 l/benzyna</div>
+                                            <div class="car__traits-hp"><img src="./img/icons/wheel.svg" alt="">317 k.m.</div>
+                                        </div>
+                                        <span></span>
+                                        <div class="card__car-rent">
+                                            <div class="car__rent-button"><button><a href="#openModal">Wynajac</a></button></div>
+                                            <div class="car__rent-price">od <p>250</p> zl/dzien</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="mix car__park-card car-renault">
+                                    <div class="car__img-box">
+                                        <div class="car__img-city">Дубай</div>
+                                        <div class="car__park-img"><img src="./img/cars-img/KIA-SPORTAGE.jpeg" alt=""></div>
+                                        
+                                    </div>
+                                    <div class="car__card-text">
+                                        <div class="card__car-name">Kia Sportage, 2022</div>
+                                        <div class="cars__car-traits">
+                                            <div class="car__traits-engine"><img src="./img/icons/engine.svg" alt="">2,3 л/бензин</div>
+                                            <div class="car__traits-hp"><img src="./img/icons/wheel.svg" alt="">317 л.с.</div>
+                                        </div>
+                                        <span></span>
+                                        <div class="card__car-rent">
+                                            <div class="car__rent-button"><button>Забронировать</button></div>
+                                            <div class="car__rent-price">от <p>7 150</p> руб/сут.</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="mix car__park-card car-mersedes">
+                                    <div class="car__img-box">
+                                        <div class="car__img-city">Legnica</div>
+                                        <div class="car__park-img"><img src="./img/cars-img/pngegg.png" alt=""></div>
+                                        
+                                    </div>
+                                    <div class="car__card-text">
+                                        <div class="card__car-name">Mersedes Vito, 2018  </div>
+                                        <div class="cars__car-traits">
+                                            <div class="car__traits-engine"><img src="./img/icons/engine.svg" alt="">2,3 l/benzyna</div>
+                                            <div class="car__traits-hp"><img src="./img/icons/wheel.svg" alt="">317 k.m.</div>
+                                        </div>
+                                        <span></span>
+                                        <div class="card__car-rent">
+                                            <div class="car__rent-button"><button><a href="#openModal">Wynajac</a></button></div>
+                                            <div class="car__rent-price">od <p>250</p> zl/dzien</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car__park-text">
+                                <!-- <div class="car__park-title">Москва известна своими величественными аллеями, роскошными торговыми центрами и впечатляющей архитектурой. В таком окружении неудивительно, что спрос на аренду элитных автомобилей в Москве растет с каждым годом. </div>
+                                <div class="car__park-subtitle">Эти роскошные автомобили стали неотъемлемой частью жизни успешных бизнесменов, звезд шоу-бизнеса и просто людей, стремящихся испытать неповторимые ощущения от комфорта и мощи.</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="main__rent-now">
+                <div class="container__main">
+                    <div class="container">
+                        <div class="rent__now-inner">
+                            <div class="rent__now-heading">Арендовать авто прямо сейчас!</div>
+                        </div>
+                        <div class="rent__now-content">
+                            <div class="rent__now-text">
+                                <div class="rent__now-title">Dizrental в Москве предлагает широкий выбор моделей от ведущих производителей, таких как Mercedes, BMW, Audi . Клиенты могут выбирать между спортивными автомобилями, роскошными седанами или эксклюзивными внедорожниками, чтобы насладиться комфортом и эстетикой этих превосходных машин.</div>
+                                <div class="rent__now-subtitle">Благодаря услугам аренды, каждый желающий может ощутить себя владельцем такого автомобиля на несколько дней или даже на несколько часов, без необходимости покупки и обслуживания.</div>
+                            </div>
+                            <div class="rent__now-form">
+                                <input type="text" class="rent__input" placeholder="Ваше имя">
+                                <input type="text" class="rent__input" placeholder="+7 (916) 123-45-67">
+                                <div class="rent__form-button"><button>Забронировать</button></div>
+                                <div class="rent__form-checkbox">
+                                    <div class="rent__form-check"><a href="#">
+                                        <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs/>
+                                            <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                        </svg>
+                                    </a></div>
+                                    <div class="rent__check-text"><p>Отправляя форму, я соглашаюсь</p> <br>
+                                        <a href="#">с политикой обработки персональных данных</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="main__rent-premium">
+                <div class="container">
+                    <div class="premum__heading">
+                        Wynajem samochodów dla roznych potrzeb
+                    </div>
+                    <div class="premium__rent-inner">
+                        <div class="premium__content">
+                            <div class="premiumRent__img-box">
+                                <img src="./img/bg/4.webp" alt="">
+                            </div>
+                            <div class="premium__rent-content">
+                                <div class="premium__content-text">
+                                    <div class="premium__text-title">Wynajem samochodu do pomocy</div>
+                                    <div class="premium__text-sutitle">Wynajem samochodow do transportowania ladunkow</div>
+                                </div>
+                                <div class="premiun__rent-button"><button><img src="./img/icons/arrow-rigth.svg" alt=""></button></div>
+                            </div>
+                        </div>
+                        <div class="premium__content">
+                            <div class="premiumRent__img-box">
+                                <img src="./img/bg/vw_caravelle.jpg" alt="">
+                            </div>
+                            <div class="premium__rent-content">
+                                <div class="premium__content-text">
+                                    <div class="premium__text-title">Wynajem samochodu dla rodzinnego wyjazdu</div>
+                                    <div class="premium__text-sutitle">Mamy samochody do wynajecia dla rodzinnych wyjazdow</div>
+                                </div>
+                                <div class="premiun__rent-button"><button><img src="./img/icons/arrow-rigth.svg" alt=""></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__steps">
+                <div class="container">
+                    <div class="steps__inner">
+                        <div class="steps__heading">3 kroki do wypożyczenia samochodu</div>
+                    </div>
+                    <div class="steps__cards">
+                        <div class="steps__card">
+                            <div class="steps__card-img">
+                                <img src="./img/icons/step-1.png" alt="">
+                            </div>
+                            <div class="step__text">
+                                <div class="step__title">Skontaktowac sie</div>
+                                <div class="step__subtitle">skontaktuj się telefonicznie lub messengerem i zarezerwuj samochód</div>
+                            </div>
+                        </div>
+                        <div class="steps__card">
+                            <div class="steps__card-img">
+                                <img src="./img/icons/step-2.png" alt="">
+                            </div>
+                            <div class="step__text">
+                                <div class="step__title">Umowa</div>
+                                <div class="step__subtitle">Podpisujesz umowę wynajmu samochodu, uiszczasz opłatę i wpłacasz kaucję.</div>
+                            </div>
+                        </div>
+                        <div class="steps__card">
+                            <div class="steps__card-img">
+                                <img src="./img/icons/step-3.png" alt="">
+                            </div>
+                            <div class="step__text">
+                                <div class="step__title">Odbiór</div>
+                                <div class="step__subtitle">Odbierasz samochód w <span>naszym salonie</span> lub możemy <span>dostarczyć w dowolne miejsce w Legnicy</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="main__discount">
+                <div class="container__main">
+                    <div class="container">
+                        <div class="main__discount-inner">
+                            <div class="main__discount-content">
+                                <div class="main__discount-text">
+                                    <div class="main__text-title">Скидки и акции</div>
+                                    <div class="main__text-subtitle">Аренда элитных автомобилей в Москве предоставляет возможность воплотить мечты в реальность и создать незабываемые впечатления. Будь то эксклюзивная свадьба, впечатляющий деловой приезд или просто желание испытать роскошь и элегантность автомобиля премиум-класса, эта услуга открывает двери в мир высокого стиля и комфорта. </div>
+                                    <div class="main__text-textsub">Аренда элитных автомобилей в Москве - это возможность позволить себе немного роскоши и создать незабываемые моменты, которые останутся в памяти надолго.</div>
+                                </div>
+                                
+                                    <div class="discount__swiper">
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                              <div class="swiper-slide">
+                                                <div class="swiper__img-box">
+                                                    <img src="./img/cars-img/slide-img.jpeg" alt="" class="swiper__img">
+                                                </div>
+                                                    <div class="swiper__content">
+                                                        <div class="swiper__qeen">
+                                                            <img src="./img/icons/qeen-slide.svg" alt="" class="qeen">
+                                                        </div>
+                                                        <div class="swiper__content-title">Скидки постоянным клиентам</div>
+                                                        <div class="swiper__content-subtitle">Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.</div>
+
+                                                    </div>
+                                                </div>
+                                              <div class="swiper-slide">
+                                                <div class="swiper__img-box">
+                                                    <img src="./img/cars-img/slide-img.jpeg" alt="" class="swiper__img">
+                                                </div>
+                                                    <div class="swiper__content">
+                                                        <div class="swiper__qeen">
+                                                            <img src="./img/icons/qeen-slide.svg" alt="" class="qeen">
+                                                        </div>
+                                                        <div class="swiper__content-title">Скидки постоянным клиентам</div>
+                                                        <div class="swiper__content-subtitle">Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.</div>
+
+                                                    </div>
+                                                </div>
+                                              <div class="swiper-slide">
+                                                <div class="swiper__img-box">
+                                                    <img src="./img/cars-img/slide-img.jpeg" alt="" class="swiper__img">
+                                                </div>
+                                                    <div class="swiper__content">
+                                                        <div class="swiper__qeen">
+                                                            <img src="./img/icons/qeen-slide.svg" alt="" class="qeen">
+                                                        </div>
+                                                        <div class="swiper__content-title">Скидки постоянным клиентам</div>
+                                                        <div class="swiper__content-subtitle">Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.</div>
+
+                                                    </div>
+                                                </div>
+                                              <div class="swiper-slide">
+                                                <div class="swiper__img-box">
+                                                    <img src="./img/cars-img/slide-img.jpeg" alt="" class="swiper__img">
+                                                </div>
+                                                    <div class="swiper__content">
+                                                        <div class="swiper__qeen">
+                                                            <img src="./img/icons/qeen-slide.svg" alt="" class="qeen">
+                                                        </div>
+                                                        <div class="swiper__content-title">Скидки постоянным клиентам</div>
+                                                        <div class="swiper__content-subtitle">Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.</div>
+
+                                                    </div>
+                                                </div>
+                                              <div class="swiper-slide">
+                                                <div class="swiper__img-box">
+                                                    <img src="./img/cars-img/slide-img.jpeg" alt="" class="swiper__img">
+                                                </div>
+                                                    <div class="swiper__content">
+                                                        <div class="swiper__qeen">
+                                                            <img src="./img/icons/qeen-slide.svg" alt="" class="qeen">
+                                                        </div>
+                                                        <div class="swiper__content-title">Скидки постоянным клиентам</div>
+                                                        <div class="swiper__content-subtitle">Постоянным клиентам мы предоставляем скидки до 30% при повторной аренде.</div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                       
+                                        <div class="slider__arrows-box">
+                                            <div class="slider__arrows">
+                                                <button class="prev">
+                                                    <img src="./img/icons/arrows-slider.svg" alt="">
+    
+                                                <button class="next">
+                                                        <img src="./img/icons/arrows-slider.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div> -->
+            <div class="servises__main">
+                <div class="container">
+                    <div class="servises__inner">
+                        <div class="servises__heading">Nasze usługi</div>
+                        <div class="servises__items">
+                            <div class="servises__item">
+                                <div class="servises__img-box">
+                                    <img src="./img/bg/bg__servises.jpeg" alt="" class="servises__img">
+                                </div>
+                                <div class="servises__item-content">
+                                    <div class="servises__content-title">Dostarczamy samochody w dowolne miejsce w Legnicy</div>
+                                    <button class="servises__content-button">
+                                        <img src="./img/icons/arrow-rigth.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="servises__item">
+                                <div class="servises__img-box">
+                                    <img src="./img/bg/bg-servises-2.jpeg" alt="" class="servises__img">
+                                </div>
+                                <div class="servises__item-content">
+                                    <div class="servises__content-title">Wynajem auta z kierowca</div>
+                                    <button class="servises__content-button">
+                                        <img src="./img/icons/arrow-rigth.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="servises__item">
+                                <div class="servises__img-box">
+                                    <img src="./img/bg/bg-servises-3.jpeg" alt="" class="servises__img">
+                                </div>
+                                <div class="servises__item-content">
+                                    <div class="servises__content-title">Kierowca na podmiane</div>
+                                    <button class="servises__content-button">
+                                        <img src="./img/icons/arrow-rigth.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reason__main">
+                <div class="container">
+                    <div class="reason__inner">
+                        <div class="reason__heading">
+                            6 powodów, dla których warto wynająć samochód z Savron Rental
+                        </div>
+                        <div class="reason__items">
+                            <div class="reason__item">
+                                <div class="reason__img-box">
+                                    <img src="./img/icons/notate.png" alt="">
+                                </div>
+                                <div class="reason__item-text">
+                                    <div class="reason__item-title">Ubiezpieczenie</div>
+                                    <div class="reason__item-subtitle">Wszystkie nasze samochody sa ubiezpieczone</div>
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__img-box">
+                                    <img src="./img/icons/qr.png" alt="">
+                                </div>
+                                <div class="reason__item-text">
+                                    <div class="reason__item-title">Polityka cenowa</div>
+                                    <div class="reason__item-subtitle">Zawsze przystępne ceny i przyjemne bonusy dla stałych klientów</div>
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__img-box">
+                                    <img src="./img/icons/qr.png" alt="">
+                                </div>
+                                <div class="reason__item-text">
+                                    <div class="reason__item-title">Polityka cenowa</div>
+                                    <div class="reason__item-subtitle">Zawsze przystępne ceny i przyjemne bonusy dla stałych klientów</div>
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__img-box">
+                                    <img src="./img/icons/money.png" alt="">
+                                </div>
+                                <div class="reason__item-text">
+                                    <div class="reason__item-title">Płatność</div>
+                                    <div class="reason__item-subtitle">Dowolna dogodna forma płatności (gotówka/bezgotówkowa, przelew bankowy)</div>
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__img-box">
+                                    <img src="./img/icons/wheel.png" alt="">
+                                </div>
+                                <div class="reason__item-text">
+                                    <div class="reason__item-title">Flota samochodowa</div>
+                                    <div class="reason__item-subtitle">Cała flota jest w doskonałym stanie 
+                                        i zawsze aktualizowana o nowe modele</div>
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__img-box">
+                                    <img src="./img/icons/speed.png" alt="">
+                                </div>
+                                <div class="reason__item-text">
+                                    <div class="reason__item-title">Szybkość</div>
+                                    <div class="reason__item-subtitle">Wynajem dowolnego samochodu w nie więcej niż 15 minut</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hire__main">
+                <div class="container__main">
+                    <div class="container">
+                        <div class="hire__inner">
+                            <div class="hire__dubai">
+                                <div class="hire__dubai-heading">
+                                    <div class="hire__dubai-title">Car hire in Dubai for different budget</div>
+                                    <div class="hire__dubai-subtitle">We guarantee that you get technically sound, clean car with a full tank, comfortable interior. Our staff will independently pick up the car at the expiration of the rental term at the specified location.</div>
+                                    <div class="hire__dubai-subtext">We strive to make car rental in Dubai affordable for everyone. That's why you can rent cars in our office:
+                                        Economy. Sedans and SUVs you can rent from 149 AED ($40) per day.Comfort. Sports cars, vans, SUVs, sedans with comfortable saloon can be rented from 219 AED ($59) per day.Premium. Premium SUVs and prestigious convertibles can be rent from AED 439 ($119) per day.</div>
+                                </div>
+                                <div class="hair__dubai-img">
+                                    <img src="./img/cars-img/jaguar.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="hire__moscow">
+                                <div class="hair__moscow-img">
+                                    <img src="./img/cars-img/hair__moscow.jpeg" alt="">
+                                </div>
+                                <div class="hair__moscow-content">
+                                    <div class="hire__moscow-heading">
+                                        <div class="hire__moscow-title">Аренда машин в Москве</div>
+                                        <div class="hire__moscow-subtitle"><p>Для получения более подробной информации о прокате авто можно посетить наш офис, оставить заявку на сайте или позвонить
+                                            по телефону <span>7 (499) 110-20-47</span></p>
+                                            Мы всегда рады помочь Вам по любым вопросам и обеспечить качественным авто.</div>
+                                    </div>
+                                    <div class="hair__reasons">
+                                        <div class="hair__reason">
+                                            <div class="hair__reason-img">
+                                                <img src="./img/icons/8.svg" alt="">
+                                            </div>
+                                            <div class="hair__reason-text">Более 8 лет на рынке проката авто</div>
+                                        </div>
+                                    
+                                   
+                                        <div class="hair__reason">
+                                            <div class="hair__reason-img">
+                                                <img src="./img/icons/24.svg" alt="">
+                                            </div>
+                                            <div class="hair__reason-text">>24  премиальных и эксклюзивных моделей</div>
+                                        </div>
+                                   
+                                    
+                                        <div class="hair__reason">
+                                            <div class="hair__reason-img">
+                                                <img src="./img/icons/car__hair.svg" alt="">
+                                            </div>
+                                            <div class="hair__reason-text">Автопарк стоимостью более 250 млн. рублей</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="brand__main">
+                <div class="container__main">
+                    <div class="container">
+                        <div class="brand__inner">
+                            <ul class="brand__items">
+                                <li class="brand__item">
+                                    <img src="./img/icons/audi.png" alt="">
+                                </li>
+                                <li class="brand__item">
+                                    <img src="./img/icons/bmw.png" alt="">
+                                </li>
+                                <li class="brand__item">
+                                    <img src="./img/icons/mersedes.png" alt="">
+                                </li>
+                                <li class="brand__item">
+                                    <img src="./img/icons/porsche.png" alt="">
+                                </li>
+                                <li class="brand__item">
+                                    <img src="./img/icons/volswagen.png" alt="">
+                                </li>
+                                <li class="brand__item">
+                                    <img src="./img/icons/Kia.png" alt="">
+                                </li>
+                                <li class="brand__item">
+                                    <img src="./img/icons/ford.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="question__main">
+                <div class="container">
+                    <div class="questions__inner">
+                        <div class="questions__img-box">
+                            <img src="./img/bg/woman.png" alt="" class="questions-img">
+                        </div>
+                        <div class="questions__content">
+                            <div class="questions__heading">
+                                <div class="questions__title">Остались вопросы?</div>
+                                <div class="questions__subtitle">Менеджер свяжется с вами в течение 15 минут и сможет ответить на все интересующие вопросы </div>
+                                <div class="questions__phone">+7 (499) 110-20-47</div>
+                            </div>
+                            <div class="question__form">
+                                <input class="question__input" type="text" placeholder="Ваше имя" >
+                                <input class="question__input" type="text" placeholder="+7 (916) 123-45-67" >
+                                <button class="questions__form-button">Забронировать</button>
+
+                                <div class="check__question-box">
+                                    <div class="question__form-check ">
+                                        <div class="question__form-img">
+                                            <svg width="10.000000" height="8.000000" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs/>
+                                                <path id="Vector" d="M0 4.34033L3.42432 8L10 0.993164L9.05615 0L3.42432 6L0.931152 3.34033L0 4.34033Z" fill="#000" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="question__form-text">Отправляя форму, я соглашаюсь
+                                        с <p><a href="#">политикой обработки персональных данных</a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </main>
+        <footer class="footer">
+            <div class="container__main">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__content">
+                            <div class="footer__contact">
+                                <div class="footer__logo-"><img src="./img/bg/Picsart_24-04-02_17-42-43-151.png" alt="" class="footer__logo"></div>
+                                <div class="footer__number">
+                                    <div class="footer__number-items">
+                                        <p>+48 (792) 181 773</p> <br> Godziny pracy: od 10:00 do 20:00
+                                    </div>
+                                    <div class="footer__number-button">
+                                        <button>Zarezerwuj połączenie</button>
+                                    </div>
+                                </div>
+                                <div class="footer__contact-local">
+                                    m. Ulesie <br> info@savronrental.com
+                                </div>
+                                <div class="footer__socials-items">
+                                    <div class="footer__socials-item">
+                                        <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+                                            <defs/>
+                                            <g>
+                                                <path id="Vector" d="M0.0756836 8.91992C0.0795898 1.05566 9.62305 -2.98779 15.3901 2.58691L15.3789 2.61621C17.0698 4.30078 18 6.54248 18 8.92432C17.9971 15.7109 10.6802 19.9634 4.75146 16.7612L0 18L1.27197 13.3784C0.487305 12.0249 0.0756836 10.4917 0.0756836 8.91992ZM5.24268 15.2773C10.2129 18.1997 16.4971 14.6245 16.5015 8.8999C16.5015 6.91992 15.7261 5.05127 14.3198 3.65723C12.9126 2.25098 11.0444 1.47461 9.0542 1.47461C3.19482 1.47461 -0.358398 7.90967 2.73438 12.8335L2.91357 13.1147L2.16016 15.8481L4.97266 15.1172L5.24268 15.2773ZM13.1235 10.7866L13.1304 10.7305C13.3555 10.8315 13.5024 10.8877 13.5576 10.9893C13.6138 11.0903 13.6138 11.5293 13.4229 12.0576C13.2358 12.5864 12.3413 13.0591 11.9106 13.1274C11.5244 13.1826 11.0361 13.207 10.501 13.0366C8.51758 12.3555 7.43311 11.8652 5.39795 9.20117C4.36182 7.7417 4.05664 6.36914 5.26709 5.03857C5.54541 4.74902 5.86133 4.74316 6.29346 4.78076C6.30664 4.78076 6.3208 4.78027 6.33545 4.77979C6.46826 4.77441 6.63477 4.76807 6.79736 5.16309C6.98486 5.60254 7.43262 6.70508 7.48877 6.81787C7.54443 6.92969 7.58252 7.05322 7.50732 7.21094C7.33105 7.54443 7.14746 7.74707 7.01025 7.89844C6.82227 8.10596 6.72168 8.2168 6.84912 8.43604C6.98096 8.66113 7.42822 9.39258 8.09424 9.98877C8.94922 10.7534 9.67139 10.9897 9.89648 11.1025C10.1191 11.2036 10.2495 11.1924 10.3809 11.0459C10.5107 10.8975 10.9409 10.396 11.0889 10.1748C11.2905 9.87158 11.4561 9.95459 12.8774 10.6641C12.9556 10.7031 13.0376 10.7437 13.1235 10.7866Z" fill="#FFFFFF"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="footer__socials-item">
+                                        <svg width="17.000000" height="14.000000" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs/>
+                                            <g>
+                                                <path id="Vector" d="M6.6709 9.22705L6.38965 13.1357C6.79199 13.1357 6.96582 12.9648 7.1748 12.7598L9.06152 10.9785L12.9702 13.8071C13.687 14.2017 14.1919 13.9941 14.3853 13.1553L16.9512 1.2749L16.9517 1.27441C17.1792 0.227051 16.5684 -0.182617 15.8701 0.074707L0.789062 5.78027C-0.240234 6.1748 -0.224609 6.74219 0.614258 6.99902L4.46973 8.18408L13.4253 2.64648C13.8472 2.37061 14.23 2.52295 13.915 2.79883L6.6709 9.22705Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </g>
+                                        </svg>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__nav">
+                               <div class="footer__nav-items">
+                                    <div class="nav__client">
+                                        <div class="nav__client-title">Klienci</div>
+                                        <div class="nav__client-item">
+                                            <a href="#">O nas</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">Zasady i warunki</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">Referencje</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">Artykuły</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">Kontakty</a>
+                                        </div>
+                                    </div>
+                                    <div class="nav__park">
+                                        <div class="nav_client-title">Klienci</div>
+                                        <div class="nav__client-item">
+                                            <a href="#">FIAT</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">MERSEDES</a>
+                                        </div>
+                                    </div>
+                                    <div class="nav__wedding">
+                                        <div class="nav__client-title">Wydarzenie</div>
+                                        <div class="nav__client-item">
+                                            <a href="#">Na wesele</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">Do sesji zdjęciowej.</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">Do nagrywania wideo</a>
+                                        </div>
+                                        <div class="nav__client-item">
+                                            <a href="#">W dniu urodzin.</a>
+                                        </div>
+                                    </div>
+                               </div>
+                               <div class="strech__konf">
+                                    <div class="strech__konf-item">© 2024 Savron Rental</div>
+                                    <div class="strech__konf-item">Polityka prywatności</div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+<!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- slickSlider -->
+<script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+<!-- Mixitup Js -->
+<script src="./js/mixitup.min.js" ></script>
+
+<!-- JavaScript -->
+<script src="./js/main.js"></script>
+</html>
