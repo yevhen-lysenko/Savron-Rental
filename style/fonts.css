@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local(Unbounded), 
+        url("../fonts/Unbounded-VariableFont_wght.woff2") format('woff2'), 
+        url("../fonts/Unbounded-VariableFont_wght.woff") format('woff'), 
+        url("../fonts/Unbounded-VariableFont_wght.eot") format('eot'); 
+}
+
+@font-face {
+    font-family: Pangram;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local(Pangram), 
+        url("../fonts/Pangram-Medium.woff2") format('woff2'), 
+        url("../fonts/Pangram-Medium.woff") format('woff'), 
+        url("../fonts/Pangram-Medium.eot") format('eot'); 
+}
+
+@font-face {
+    font-family: Pangram;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local(Pangram), 
+        url("../fonts/Pangram-Bold.woff2") format('woff2'), 
+        url("../fonts/Pangram-Bold.woff") format('woff'), 
+        url("../fonts/Pangram-Bold.eot") format('eot');
+}
+
+
