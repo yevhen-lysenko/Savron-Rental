@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 500px) {
   .header__content .container__main {
-    background: url("/img/bg/mers-adaptive.jpg") 100% 100% no-repeat;
+    background: url("..//img/bg/mers-adaptive.jpg") 100% 100% no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1065,7 +1065,7 @@ h1, h2, h3, h4, h5, h6 {
 .main__rent-now .container__main {
   margin-bottom: 120px;
   padding: 170px 260px;
-  background: url("/img/bg/bg-mersedes.jpeg") 100% 100% no-repeat;
+  background: url("..//img/bg/bg-mersedes.jpeg") 100% 100% no-repeat;
   background-size: cover;
   border-radius: 36px;
 }
@@ -1199,7 +1199,7 @@ h1, h2, h3, h4, h5, h6 {
   .main__rent-now .container__main {
     margin-bottom: 40px;
     padding: 40px 20px;
-    background: url("/img/bg/bg-mersedes.jpeg") 50% 100% no-repeat;
+    background: url("..//img/bg/bg-mersedes.jpeg") 50% 100% no-repeat;
     background-size: cover;
     border-radius: 0px;
   }
